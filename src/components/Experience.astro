@@ -1,0 +1,24 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Programador fullstack en .Net MVC",
+    company: "Eldisser",
+    description:
+      "Desarrollo y mantenimiento de la b2b de la empresa. Mejora de la funcionabilidad, solución de errores y creación de nuevas funciones. Mantenimiento de la SGA de la empresa",
+    link: "https://eldisser.com",
+  },
+  
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
