@@ -7,5 +7,7 @@ import robotsTxt from "astro-robots-txt"
 export default defineConfig({
   integrations: [tailwind(), robotsTxt()],
   
-
+  // Build Options
+  output: "server",
+  adapter: vercel(),
 })
